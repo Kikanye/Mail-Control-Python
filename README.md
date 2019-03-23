@@ -1,2 +1,2 @@
 # Mail-Control-Python
-Python Script to take care of mail from outlook
+Python Script to automatically download emails and attachments from outlook
