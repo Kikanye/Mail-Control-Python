@@ -26,14 +26,14 @@ class HandlerClass(object):
             print("Body:  "+Body)
             global count
             if mail.Attachments:
-                while (os.path.isdir('C:\\Users\\rnchris\\Desktop\\Attachments'+str(count))):
+                while (os.path.isdir('C:\\Users\\Desktop\\Attachments'+str(count))):
                     count+=1
-                os.makedirs('C:\\Users\\rnchris\\Desktop\\Attachments'+str(count))
+                os.makedirs('C:\\Users\\Desktop\\Attachments'+str(count))
                 #os.chdir('C:\\Users\\rnchris\\Desktop\\Attachments')
                 for att in mail.Attachments:
                     attachmentType=att.FileName
                     attachmentType=attachmentType.split('.')[1]
-                    att.SaveAsFile('C:\\Users\\rnchris\\Desktop\\Attachments'+str(count)+'\\Download'+str(count)+'.'+attachmentType)
+                    att.SaveAsFile('C:\\Users\\Desktop\\Attachments'+str(count)+'\\Download'+str(count)+'.'+attachmentType)
                     count+=1
                     print('Worked!')
             #subject = mail.subject
